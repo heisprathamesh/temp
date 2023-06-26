@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding: 12px;
+            background: linear-gradient(90deg, black, rgb(108, 2, 170), black);
+
+
+        }
+        a{
+            text-decoration: wavy;
+            color: #f8002f;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px black;
+            transition-duration: .3s;
+        }
+        a:hover{
+            transform: skew(45deg,45deg) scale(4);
+        }
+        .part{
+            width:auto;
+            display: flex;
+            justify-content: center;
+            place-items: center;
+            height: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .btns{
+            display:flex;
+            text-align: center;
+            border: 2px solid rgba(112, 110, 110, 0.829);
+            border-radius: 30px;
+            padding:10px 15px;
+            background: transparent;
+            margin-right: 10px;
+            color: rgba(255, 255, 255, 0.836);
+            transition-duration: 0.3s;
+
+        }
+        .btns:hover{
+            color: rgb(0, 211, 0);
+            transform: skew(4deg, 4deg) scale(1.2); ;
+            background-color: #f8002f;
+            background-image: linear-gradient(326deg, #c70024 0%, #000c14 74%);
+            border: 2px solid rgba(0, 0, 0, 0.562);
+
+
+        }
+        .labs{
+            font-family: Arial;
+            text-shadow: 2px 2px 2px black;
+            font-size: larger;
+            color: #ff0000b4;
+        }
+        .btnrs{
+            display:flex;
+            justify-content: center;
+            place-items: center;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .btnrm{
+            display:grid;
+            justify-content: center;
+            place-items: center;
+            
+        }
+        #in1{
+          font: size 25px;;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+          width: auto;
+          color:rgb(255, 0, 0);
+          height: auto;
+          padding: 15px 20px; 
+          border: 2px solid rgba(128, 128, 128, 0.863); 
+          border-radius: 30px;
+          text-align: center;
+          background: transparent;     
+          transition-duration: 0.3s;   
+          text-shadow: 2px 2px 4px black;  
+        }
+        #in1:hover{
+            color: rgba(0, 223, 0, 0.801);
+            transform: skew(4deg, 4deg) scale(1.2);
+            text-shadow: 3px 3px 2px black;
+        }
+        .carder{
+            background:url("https://e0.pxfuel.com/wallpapers/160/69/desktop-wallpaper-itachi-%E3%82%A4%E3%82%BF%E3%83%81-naruto-sharingan-art-uchiha-edit-konoha-anime-naruto-shippuden.jpg");
+            padding: 7px 10px;
+            border: 2px solid white;
+            width:auto;
+            height: auto;
+            border-radius:20px;
+            box-shadow: 2px 2px 4px black;
+            background-size:contain;
+            transition-duration: 0.3s;
+        }
+        .carder:hover{
+            background-size:cover;
+            border: 2px solid rgba(247, 0, 0, 0.719);
+            box-shadow: 5px 5px 4px rgb(0, 0, 0);
+        }
+        #inst{
+            height: 40px;
+        }
+        .int{
+            color:rgba(255, 0, 0, 0.801);
+            display:grid;
+            place-items: center;
+            text-align: center;
+        }
+    
+
+    </style>
+</head>
+<body>
+ <!--  <div class="part">
+
+        <form action="" name="f1">
+            <label for="celcius">
+                Enter Celcius :
+            </label>
+            <br>
+            <input type="number" name="cel" placeholder="enter celcius">
+            <br><br>
+            <label for="fer">for fernheit</label>
+            <br>
+            <input type="number" name="fer" placeholder="this for fernheit">
+            <br><br>
+            <label for="kel">in kelvin</label>
+            <br><input type="number" name="kel" placeholder="in kelvin">
+            <br><br>
+
+            <input type="button" onclick="relconvo()" value="convert">
+            
+        </form>
+        
+        <script type="text/javascript">
+            let convo = ()=>{
+                var cel = parseInt(document.f1.cel.value);
+              document.f1.fer.value = parseInt((cel*9/5)+32)
+              document.f1.kel.value = parseFloat(cel+273.15)
+
+
+            }
+       
+            let feo =()=>{
+                 var b = parseInt(document.f1.fer.value);
+                document.f1.cel.value = parseInt( (b-32)*5/9);
+                document.f1.kel.value = parseFloat( (b-32)*5/9 +273.15);
+
+            }
+
+            let kle = ()=>{
+              var  c = parseInt(document.f1.kel.value );
+                document.f1.cel.value = parseFloat( c-273.15);
+                document.f1.fer.value = parseFloat((c-273.15 *9/5)+32);
+
+            }
+
+            let relconvo=()=>{
+                convo();
+                feo();
+                kle();
+            }
+        </script>
+    
+      <script>
+            let a  = parseInt(prompt ("enter celcius"));
+            let b =(a*5)-32/9
+            alert(`the fernheit  is ${b}`); 
+            
+            let a = parseInt(prompt("enter num"));
+            let v = (a-32)*5/9;
+            alert(`the celcius is ${v}`)
+        </script>
+
+    </div>-->       
+    <br><br><br><br>
+
+    <div class="part">
+
+        <div class="carder">
+        <form action="" name="f1">
+            <div class="btnrm">
+            <label for="celcius" class="labs">
+                Enter Celcius :
+            </label>
+            <br>
+            <input type="number" name="cel" placeholder="enter celcius" id="in1">
+            <br><br>
+            <label for="fer" class="labs">for fernheit</label>
+            <br>
+            <input type="number" name="fer" placeholder="this for fernheit" id="in1">
+            <br><br>
+            <label for="kel" class="labs">in kelvin</label>
+            <br><input type="number" name="kel" placeholder="in kelvin" id="in1">
+            <br><br>
+        </div>
+
+            <div class="btnrs">
+            <input type="button" onclick="convert_to_fahrenheit()" value="Convert to Fahrenheit" class="btns">
+            <input type="button" onclick="convert_to_celsius()" value="Convert to Celsius" class="btns">
+           
+            </div>
+            <div class="btnrm">
+             <input type="button" onclick="convert_to_kelvin()" value="Convert to Kelvin" class="btns">
+            </div>
+        </form>
+        </div>
+       <script type="text/javascript">
+            function convert_to_fahrenheit() {
+                var cel = parseFloat(document.f1.cel.value);
+                document.f1.fer.value = parseFloat((cel * 9/5) + 32);
+                document.f1.kel.value = parseFloat(cel + 273.15);
+            }
+       
+            function convert_to_celsius() {
+                var b = parseFloat(document.f1.fer.value);
+                document.f1.cel.value = parseFloat((b - 32) * 5/9);
+                document.f1.kel.value = parseFloat((b - 32) * 5/9 + 273.15);
+            }
+
+            function convert_to_kelvin() {
+                var c = parseFloat(document.f1.kel.value);
+                document.f1.cel.value = parseFloat(c - 273.15);
+                document.f1.fer.value = parseFloat((c - 273.15) * 9/5 + 32);
+            }
+        </script>
+        <script>
+            var sr = document.getElementById("in1");
+            var a = parseFloat(document.f1.cel.value);
+            if(a>=40){
+                sr.style.color == "green";
+            }
+            else{
+                sr.style.color == "white"
+            }
+            
+        </script>
+
+        
+    </div>
+<br><br><br>
+    <div class="int"><a href="https://instagram.com/heisprathamesh_1.11?igshid=ZDdkNTZiNTM=">Follow Me:<img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" id="inst"/>
+    </a>
+    </div>
+</body>
+</html>
